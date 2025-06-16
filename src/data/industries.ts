@@ -1,4 +1,3 @@
-
 export interface Industry {
   id: string;
   name: string;
@@ -11,6 +10,29 @@ export interface Industry {
 }
 
 export const industries: Industry[] = [
+  {
+    id: 'migrateworld',
+    name: 'Migrate World',
+    icon: '🌍',
+    description: 'Global citizenship and residency advisory services',
+    welcomeMessage: 'Welcome to Migrate World! I\'m here to help you explore citizenship by investment and residency by investment opportunities worldwide. How can I assist you with your global mobility goals today?',
+    defaultResponse: 'Thank you for your inquiry! For personalized advice on citizenship and residency programs, I recommend scheduling a consultation with one of our expert advisors. Could you tell me more about which countries or programs interest you?',
+    quickQuestions: ['Citizenship by investment programs', 'Residency by investment options', 'Caribbean citizenship programs', 'European residency programs', 'Investment requirements'],
+    responses: {
+      'citizenship,passport,second citizenship': 'We offer citizenship by investment programs in several countries including Dominica, St. Kitts & Nevis, Antigua & Barbuda, Grenada, and more. These programs typically require investments starting from $100,000. Would you like to know about specific countries or requirements?',
+      'residency,residence,permanent residence': 'Our residency by investment programs include options in Portugal, Spain, Greece, Malta, UAE, and other countries. Investment amounts vary from €250,000 to €2 million depending on the country and program. Which region interests you most?',
+      'caribbean,dominica,antigua,grenada,st kitts': 'Caribbean citizenship programs are popular for their visa-free travel benefits and relatively lower investment requirements. Dominica starts at $100,000, while other Caribbean nations have programs ranging from $130,000 to $400,000. All offer visa-free travel to 140+ countries.',
+      'europe,portugal,spain,greece,malta': 'European residency programs offer access to the EU market and lifestyle. Portugal\'s Golden Visa starts at €280,000, Spain at €500,000, and Greece at €250,000. These can lead to permanent residency and eventual citizenship.',
+      'investment,cost,price,amount': 'Investment requirements vary by program: Caribbean citizenship starts from $100,000, European residency from €250,000, and UAE residency from $200,000. All investments are thoroughly vetted and secure. Would you like specific details for any country?',
+      'real estate,property,investment property': 'We offer pre-approved real estate investment options that qualify for citizenship and residency programs. Our properties are carefully selected and vetted. You can invest in luxury resorts, residential developments, or commercial properties depending on the program.',
+      'visa free,travel,passport power': 'Our citizenship programs offer significant travel freedom. Caribbean passports provide visa-free access to 140+ countries including the UK, EU, and Hong Kong. European residency allows free movement within the Schengen zone.',
+      'due diligence,background check,approval': 'All our programs require thorough due diligence checks. Our team handles the entire process to ensure compliance. The approval process typically takes 3-6 months depending on the program and complexity of your case.',
+      'family,spouse,children,dependents': 'Most programs allow you to include your spouse and dependent children. Some programs also allow parents and grandparents. Family members receive the same citizenship or residency benefits as the main applicant.',
+      'consultation,appointment,meeting': 'I can help you schedule a free consultation with one of our citizenship and residency experts. We offer in-person meetings in our global offices or virtual consultations. Would you prefer to discuss a specific program or get a general overview?',
+      'office,location,contact': 'Migrate World has offices worldwide including Dubai, London, Hong Kong, and other major cities. You can visit our website at migrateworld.com for all office locations and contact details, or I can connect you with the office nearest to you.',
+      'timeline,processing time,how long': 'Processing times vary by program: Caribbean citizenship typically takes 3-4 months, European residency 6-12 months, and UAE residency 2-3 months. We provide regular updates throughout the process and ensure everything moves as quickly as possible.',
+    }
+  },
   {
     id: 'general',
     name: 'General',
